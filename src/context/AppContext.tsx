@@ -16,7 +16,7 @@ const initialState: AppState = {
     {
       id: 'welcome',
       role: 'assistant',
-      text: "Welcome to Holland Padel Connect. I'm your Club Assistant. I can help you with Padel rules and techniques, scoring, Academy lessons, your Scorebook, club services, parking reservations, and more.",
+      text: "Welcome to Padel Club Connect. I'm your Club Assistant. I can help you with Padel rules and techniques, scoring, Academy lessons, your Scorebook, club services, parking reservations, and more.",
       createdAt: new Date('2026-09-03T18:30:00').toISOString(),
     },
   ],
@@ -40,7 +40,14 @@ type Action =
 function reducer(state: AppState, action: Action): AppState {
   switch (action.type) {
     case 'hydrate':
-      return action.payload;
+      return {
+        ...action.payload,
+        assistantMessages: action.payload.assistantMessages.map(message =>
+          message.id === 'welcome' && message.role === 'assistant'
+            ? {...message, text: initialState.assistantMessages[0].text}
+            : message,
+        ),
+      };
     case 'complete-onboarding':
       return {...state, hasCompletedOnboarding: true};
     case 'toggle-bookmark':

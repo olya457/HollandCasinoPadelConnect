@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   bullet: {color: colors.textMuted, marginBottom: 8},
   body: {color: colors.textMuted, lineHeight: 24},
   answers: {gap: 10, marginTop: 14},
-  answer: {borderRadius: 14, borderWidth: 1, borderColor: '#2A3268', backgroundColor: '#161B3A', paddingHorizontal: 14, paddingVertical: 16},
+  answer: {borderRadius: 14, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.bgSoft, paddingHorizontal: 14, paddingVertical: 16},
   answerSelected: {borderColor: colors.purple},
   answerCorrect: {backgroundColor: 'rgba(25, 227, 139, 0.12)', borderColor: colors.green},
   answerWrong: {backgroundColor: 'rgba(255, 95, 109, 0.12)', borderColor: colors.red},

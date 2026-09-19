@@ -104,7 +104,7 @@ export function OnboardingScreen({navigation, slides}: any) {
                   title={index === slides.length - 1 ? 'Get Started →' : 'Continue →'}
                   onPress={handleContinue}
                   color={item.accent}
-                  textColor={item.accent === '#FFC529' ? '#070B21' : colors.text}
+                  textColor={item.accent === '#FFC529' ? colors.bg : colors.text}
                 />
               </Animated.View>
             </View>
@@ -126,14 +126,14 @@ const styles = StyleSheet.create({
   },
   overlay: {
     flex: 1,
-    backgroundColor: 'rgba(5, 8, 23, 0.35)',
+    backgroundColor: colors.overlay,
     justifyContent: 'flex-end',
   },
   bottom: {
     paddingHorizontal: 24,
     paddingBottom: 34,
     gap: 14,
-    backgroundColor: 'rgba(8, 11, 33, 0.82)',
+    backgroundColor: colors.bg,
   },
   eyebrow: {
     fontSize: 12,

@@ -84,11 +84,6 @@ function SplashScreen({onDone}: {onDone: () => void}) {
 
   return (
     <View style={styles.splashWrap}>
-      <Image
-        source={require('../assets/loader-holland-casino.png')}
-        style={styles.splashBackground}
-        resizeMode="cover"
-      />
       <View style={styles.splashContent}>
         <Animated.View style={{opacity: logoOpacity, transform: [{translateX: logoOffset}, {scale: logoScale}]}}>
           <Image
@@ -98,8 +93,8 @@ function SplashScreen({onDone}: {onDone: () => void}) {
           />
         </Animated.View>
         <Animated.View style={{opacity: textOpacity, transform: [{translateY: textOffset}]}}>
-          <Text style={styles.splashTitle}>Holland</Text>
-          <Text style={styles.splashSubtitle}>PADEL CONNECT</Text>
+          <Text style={styles.splashTitle}>Padel Club</Text>
+          <Text style={styles.splashSubtitle}>Connect</Text>
         </Animated.View>
       </View>
       <View style={[styles.splashBars, {bottom: compact ? 94 : 145}]}> 
@@ -152,7 +147,7 @@ function Tabs() {
           bottom: bottomOffset,
           height: tabBarHeight,
           borderRadius: 26,
-          backgroundColor: 'rgba(14, 18, 42, 0.95)',
+          backgroundColor: colors.bgSoft,
           borderTopWidth: 0,
           paddingBottom: 6,
           paddingTop: 8,
@@ -236,11 +231,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.bg,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  splashBackground: {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
   },
   splashContent: {
     alignItems: 'center',

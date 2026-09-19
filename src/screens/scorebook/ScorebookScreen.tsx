@@ -77,15 +77,15 @@ function Record({label, value}: {label: string; value: string}) {
 
 const styles = StyleSheet.create({
   metrics: {flexDirection: 'row', gap: 8},
-  metric: {flex: 1, alignItems: 'center', gap: 4, paddingVertical: 12, borderRadius: 13, backgroundColor: '#171C3E'},
+  metric: {flex: 1, alignItems: 'center', gap: 4, paddingVertical: 12, borderRadius: 13, backgroundColor: colors.card},
   metricValue: {fontSize: 18, fontWeight: '900'},
   metricLabel: {fontSize: 10, color: colors.textMuted, fontWeight: '700'},
-  streakCard: {backgroundColor: '#1A192C', borderColor: '#383052', gap: 5},
+  streakCard: {backgroundColor: colors.card, borderColor: colors.border, gap: 5},
   streakTitle: {color: colors.yellow, fontWeight: '900'},
   streakCopy: {color: colors.textMuted, fontSize: 13},
   actions: {flexDirection: 'row', gap: 8},
   action: {flex: 1, minHeight: 42, borderRadius: 12, justifyContent: 'center', alignItems: 'center'},
-  actionSecondary: {backgroundColor: '#1C2149', borderWidth: 1, borderColor: '#30396F'},
+  actionSecondary: {backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border},
   actionPrimary: {backgroundColor: colors.purple},
   actionText: {color: colors.text, fontSize: 12, fontWeight: '900'},
   cardTitle: {color: '#C8A8FF', fontSize: 11, fontWeight: '900', letterSpacing: 1},

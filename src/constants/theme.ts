@@ -1,11 +1,11 @@
 export const colors = {
-  bg: '#070B21',
-  bgSoft: '#111631',
-  card: '#171C3E',
-  cardAlt: '#1E2350',
-  border: '#302B67',
+  bg: '#061F17',
+  bgSoft: '#0B2B20',
+  card: '#10382A',
+  cardAlt: '#174634',
+  border: '#285640',
   text: '#F4F5FF',
-  textMuted: '#8F95B2',
+  textMuted: '#A3BCAF',
   purple: '#9A5CFF',
   purpleDark: '#6B39E7',
   cyan: '#16D7FF',
@@ -13,7 +13,7 @@ export const colors = {
   yellow: '#FFC529',
   orange: '#FF9A1F',
   red: '#FF5F6D',
-  overlay: 'rgba(4, 7, 20, 0.74)',
+  overlay: 'rgba(6, 31, 23, 0.82)',
 };
 
 export const spacing = {

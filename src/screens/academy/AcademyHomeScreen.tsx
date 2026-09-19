@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   cardTitle: {color: colors.text, fontWeight: '800', fontSize: 15},
   cardSubtitle: {color: colors.textMuted, marginTop: 4},
   progressValue: {color: colors.purple, fontSize: 28, fontWeight: '900'},
-  progressBarTrack: {height: 8, borderRadius: 999, backgroundColor: '#23295B'},
+  progressBarTrack: {height: 8, borderRadius: 999, backgroundColor: colors.cardAlt},
   progressBarFill: {height: 8, borderRadius: 999, backgroundColor: colors.purple},
   filters: {flexDirection: 'row', gap: 8, flexWrap: 'wrap'},
   lessonCardComplete: {borderColor: '#1E8E67', backgroundColor: '#0F2431'},
