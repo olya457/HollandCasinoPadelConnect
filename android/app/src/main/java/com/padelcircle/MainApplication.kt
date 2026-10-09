@@ -1,4 +1,4 @@
-package com.padelclubconnect
+package com.padelcircle
 
 import android.app.Application
 import com.facebook.react.PackageList
